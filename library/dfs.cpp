@@ -6,6 +6,8 @@ bool visited[1001][1001];
 const int dy[] = {-1, 0, 1, 0};
 const int dx[] = {0, 1, 0, -1};
 
+
+//move in all directions (up, down, left, right)
 void dfs(int y, int x) {
 	visited[y][x] = 1;
 	for(int i=0; i<4; i++) {
