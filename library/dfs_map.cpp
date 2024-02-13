@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-int n, m, y, x; //1 <= n, m <= 1000, y, x is starting point.
-int a[1001][1001]; // 0 is accessible, 1 is inaccessible.
-bool visited[1001][1001];
+int n, m, y, x; //1 <= n, m <= 100, y, x is starting point.
+int a[101][101]; // 0 is accessible, 1 is inaccessible.
+bool visited[101][101];
 const int dy[] = {-1, 0, 1, 0};
 const int dx[] = {0, 1, 0, -1};
 
