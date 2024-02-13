@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
-const int V = 100;
 const int dy[4] = {-1, 0, 1, 0};
 const int dx[4] = {0, 1, 0, -1};
-int a[V+1][V+1], m, n;
-bool visited[V+1][V+1];
+// 1 <= n, m <= 100
+int a[101][101], m, n;
+bool visited[101][101];
 
 int dfs(int y, int x){
     visited[y][x] = 1; 
