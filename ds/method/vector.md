@@ -1,6 +1,6 @@
 ## vector 초기화
 
-```
+```c++
 // 기본
 vector<int> v;
 
@@ -18,7 +18,7 @@ vector<int> v(3, 1); // {1, 1, 1}
 
 ### pop_back(), push_back(요소)
 
-```
+```c++
 vector<int> v {1, 2, 3};
 v.pop_back();
 for(int n : v) cout << n << " "; // 1 2
@@ -31,7 +31,7 @@ for(int n : v) cout << n << " "; // 1 2 5
 
 ### erase()
 
-```
+```c++
 vector<int> v {1, 2, 3};
 erase(v.begin());
 for(int n : v) cout << n << " "; // 2 3
@@ -44,7 +44,7 @@ for(int n : v) cout << n << " "; //
 
 ### find(from, to, value)
 
-```
+```c++
 vector<int> v {1, 2, 3};
 auto it = find(v.begin(), v.end(), 2);
 if(it != v.end()) cout << "YES"; // YES
@@ -59,7 +59,7 @@ if(it != v.end()) cout << "YES"; // YES
 
 ### fill(from, to, value)
 
-```
+```c++
 vector<int> v(3);
 fill(v.begin(), v.end(), 1);
 for(int n : v) cout << n << " "; // 1 1 1
