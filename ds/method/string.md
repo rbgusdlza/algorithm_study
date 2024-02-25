@@ -2,7 +2,7 @@
 
 ### +=
 
-```
+```c++
 string a, b;
 a = "bob"; b = "joa";
 a += b;
@@ -14,7 +14,7 @@ cout << a; // bobjoa
 
 ### size()
 
-```
+```c++
 string a = "bob";
 cout << a.size(); // 3
 ```
@@ -24,7 +24,7 @@ cout << a.size(); // 3
 
 ### insert(위치, 문자열)
 
-```
+```c++
 string a, b;
 a = "joa"; b = "bob";
 a.insert(0, b);
@@ -36,7 +36,7 @@ cout << a; // bobjoa
 
 ### erase(위치, 크기)
 
-```
+```c++
 string a = "bobjoa";
 a.erase(0, 3);
 cout << a; // joa
@@ -47,7 +47,7 @@ cout << a; // joa
 
 ### find(문자열)
 
-```
+```c++
 string a = "bobjoa";
 auto it = a.find("joa");
 if (it != string::npos) cout << "Yes"; // Yes
@@ -59,7 +59,7 @@ if (it != string::npos) cout << "Yes"; // Yes
 
 ### substr(위치, 크기)
 
-```
+```c++
 string a = "bobjoa";
 string b = substr(0, 3);
 cout << b; // bob
