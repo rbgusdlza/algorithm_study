@@ -2,7 +2,7 @@
 
 ### insert({key, value})
 
-```
+```c++
 map<int, string> mp;
 mp.insert({1, "kim"});
 cout << mp[1]; // kim
@@ -13,7 +13,7 @@ cout << mp[1]; // kim
 
 ### size(), erase(key)
 
-```
+```c++
 map<int, string> mp;
 mp[1] = "kim";
 mp[2] = "gyu";
