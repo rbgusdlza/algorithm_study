@@ -54,17 +54,29 @@ if (it != string::npos) cout << "Yes"; // Yes
 ```
 
 * 특정 문자열을 찾아 위치를 반환한다.
-* 해당 문자열을 못 찾을 경우, string::npos를 반환한다.
+* 해당 문자열을 못 찾을 경우, string::npos(-1)를 반환한다.
 * O(n)의 시간복잡도를 갖는다. (문자열 처음부터 끝까지 확인해야 하기 때문)
 
 ### substr(위치, 크기)
 
 ```c++
 string a = "bobjoa";
-string b = substr(0, 3);
+string b = a.substr(0, 3);
 cout << b; // bob
 ```
 
 * 특정 위치에서 **크기**만큼 문자열을 추출한다.
 * 특정 위치에서 주어진 문자열의 끝까지 추출하고 싶을 때, 위치만 파라미터로 넣어주면 된다.
 * O(n)의 시간복잡도를 갖는다. (문자열 처음부터 끝까지 확인해야 하기 때문)
+
+### replace(교체하고 싶은 문자열의 위치, 교체하고 싶은 문자열의 길이, 새로운 문자열)
+
+```c++
+string str = "bobjoa";
+string find_str = "bob";
+string replace_str = "kim";
+str.replace(str.find(find_str), find_str.length(), replace_str);
+cout << str; // kimjoa
+```
+
+* 문자열 내의 특정 부분 문자열을 다른 문자열로 교체한다.
