@@ -11,9 +11,12 @@ vector<int> v {1, 2, 3};
 vector<int> v(3); // {0, 0, 0}
 vector<int> v(3, 1); // {1, 1, 1}
 
-// 기존 벡터를 이용한 초기화
+// vector를 포함한 기존 컨테이너를 이용한 초기화
+// 단, stack, queue와 같이 이터레이터를 지원하지 않는 컨테이너는 제외
 vector<int> v1 {1, 2, 3, 4};
+set<int> s {1, 2, 3};
 vector<int> v2(v1.begin(), v1.begin() + 2); // 1 2
+vector<int> v3(s.begin(), s.end()) // 1 2 3
 ```
 
 <br>
