@@ -13,8 +13,7 @@ vector<int> v(3, 1); // {1, 1, 1}
 
 // 기존 벡터를 이용한 초기화
 vector<int> v1 {1, 2, 3, 4};
-vector<int> v2(v1.begin(), v1.begin() + 2);
-for(int n : v) cout << n << " "; // 1 2
+vector<int> v2(v1.begin(), v1.begin() + 2); // 1 2
 ```
 
 <br>
