@@ -73,3 +73,14 @@ for(int n : v) cout << n << " "; // 1 1 1
 ```
 
 * ``fill(from, to, value)``은 vector 내의 value로 값을 할당할 때 이용한다.
+
+### max_element(start, end), min_element(start, end)
+
+```c++
+vector<int> v {1, 2, 3};
+cout << *max_element(v.begin(), v.end()); // 3
+cout << *min_element(v.begin(), v.end()); // 1
+```
+
+* ``max_element(start, end)``와 ``min_element(start, end)``는 각각 [start, end) 범위 중 가장 큰 값과 가장 작은 값의 이터레이터를 반환한다.
+* vector 이외에 array와 list에도 사용 가능하다.
