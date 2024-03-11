@@ -84,3 +84,17 @@ cout << *min_element(v.begin(), v.end()); // 1
 
 * ``max_element(start, end)``와 ``min_element(start, end)``는 각각 [start, end) 범위 중 가장 큰 값과 가장 작은 값의 이터레이터를 반환한다.
 * vector 이외에 array와 list에도 사용 가능하다.
+
+### rotate(first, middle, last)
+
+```c++
+vector<int> v1 {1, 2, 3, 4, 5, 6};
+vector<int> v2 = v1;
+int k = 1;
+rotate(v1.begin(), v1.begin() + k, v1.end()); // k만큼 반시계방향으로 회전
+for(int n : v1) cout << n << " "; // 2 3 4 5 6 1
+rotate(v2.rbegin(), v2.rbegin() + k, v2.rend()); // k만큼 시계방향으로 회전
+for(int n : v2) cout << n << " "; // 6 1 2 3 4 5
+```
+
+* ``rotate()``는 vector 내의 [first, last) 구간을 middle 값을 이용해 회전시킨다.
