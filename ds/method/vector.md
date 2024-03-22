@@ -23,7 +23,7 @@ vector<int> v3(s.begin(), s.end()) // 1 2 3
 
 ## 자주 사용하는 메서드
 
-### pop_back(), push_back(요소)
+### pop_back(), push_back(element)
 
 ```c++
 vector<int> v {1, 2, 3};
@@ -34,7 +34,7 @@ for(int n : v) cout << n << " "; // 1 2 5
 ```
 
 * ``pop_back()``은 vector의 맨 뒤의 요소를 삭제한다.
-* ``push_back(요소)``은 vector의 뒤에서부터 요소를 추가한다.
+* ``push_back(element)``은 vector의 뒤에서부터 요소를 추가한다.
 
 ### erase()
 
