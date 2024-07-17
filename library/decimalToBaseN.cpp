@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 int n, b; 
-vector<int> v;
 
 string decimalToBaseN(int n, int b) {
+	vector<int> v;
 	while(n > 1) {
 		v.push_back(n % b);
 		n /= b;
