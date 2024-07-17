@@ -4,6 +4,7 @@ int n, b;
 vector<int> v;
 
 int main() {
+	// n: 바꾸려는 수, b: base(기수)
 	cin >> n >> b;
 	while(n > 1) {
 		v.push_back(n % b);
