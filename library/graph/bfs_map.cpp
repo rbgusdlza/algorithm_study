@@ -14,8 +14,8 @@ void bfs(int y, int x) {
 	while(q.size()) {
 		tie(sy, sx) = q.front(); q.pop();
 		for(int i = 0; i < 4; i++) {
-			int ny = y + dy[i];
-			int nx = x + dx[i];
+			int ny = sy + dy[i];
+			int nx = sx + dx[i];
 			if(ny < 0 || ny >= n || nx < 0 || nx >= m || visited[ny][nx]) continue;
 			if(a[ny][nx] == 1) continue;
 			visited[ny][nx] = visited[sy][sx] + 1;
