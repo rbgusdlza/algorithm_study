@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define fastIo cin.tie(0)->sync_with_stdio(0)
+#define pair<int, int> pii
 typedef long long ll;
 const int INF = 1e9 + 7;
 const ll LNF = 1e18 + 7;
