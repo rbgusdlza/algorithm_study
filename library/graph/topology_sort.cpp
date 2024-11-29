@@ -42,7 +42,8 @@ int main() {
 	}
 	
 	vector<int> ret = topology_sort();
-	for(int z : ret) cout << z << " ";
+	if(ret.size() != n) cout << "cycle exists" << "\n";
+ 	for(int z : ret) cout << z << " ";
 	
 	return 0;
 }
