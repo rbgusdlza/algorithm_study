@@ -22,9 +22,9 @@ int main() {
 	fastIo;
 	
 	cin >> n;
-	for(int i=0; i<n; i++) cin >> a[i];
+	for(int i=0; i<n; i++) cin >> arr[i];
 	bubble_sort();
-	for(int i=0; i<n; i++) cout << a[i] << " ";
+	for(int i=0; i<n; i++) cout << arr[i] << " ";
 	
 	return 0;
 }
